@@ -1,0 +1,649 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;         
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.navbar {
+  background-color: rgb(66, 66, 66);
+}
+.navs {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+.navs ul {
+  display: flex;
+  position: relative;
+}
+.navs ul li {
+  list-style: none;
+  padding: 10px 30px;
+}
+.navs ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+.navbar li::after {
+  position: relative;
+  top: 5px;
+  left: 50%;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(255, 187, 0);
+  display: block;
+  border-radius: 1cm;
+  transition: all 0.8s;
+}
+.navbar li:hover::after {
+  position: relative;
+  width: 100%;
+  right: 0%;
+  left: 0%;
+}
+
+
+                        /* navbar drop down */
+
+.dropdown li {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul .dropdown{
+  position: absolute;
+  left: 180px;
+  display: none;
+  z-index: 2;
+  background-color: rgb(66, 66, 66);
+}
+.navs li:hover .dropdown{
+  display: block;
+  cursor: pointer;
+}
+.input{
+  position: relative;
+}
+.inpinput[type=text]{
+  color: white;
+}
+.inp{
+  border: none;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.inp::placeholder{
+  color: white;
+}
+input[type=Search]{
+  color: white;
+}
+#icon{
+  position: absolute;
+  color: white;
+  right: 0px;
+  top: 1px;
+  cursor:pointer;
+  background-color: orange;
+  padding: 9px;
+  border-radius: 2px;
+}
+                /* logo */
+.logo {
+  color: orangered;
+  font-family: cursive;
+}
+.logo span {
+  color: orange;
+}
+.btn button {
+  font-size: 16px;
+  padding: 5px 20px;
+  background-color: orange;
+  border: none;
+  color: white;
+  font-family: monospace;
+  border-radius: 10px;
+  background-size: 200% 200%;
+  transition: ease-in-out 0.7s;
+}
+.btn button a{
+  color: white;
+  text-decoration: none;
+}
+.btn button:hover {
+  background-image: linear-gradient(
+    to top,
+    rgb(253, 83, 4) 51%,
+    transparent 50%
+  );
+  background-position: 0 100%;
+  color: white;
+}
+
+.mbar {
+  font-size: 30px;
+  display: none;
+}
+
+                /* container1 */
+.container1 {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.623),
+      rgba(0, 0, 0, 0.603)
+    ),
+    url(https://www.photojaanic.com/blog/wp-content/uploads/sites/2/2017/07/food-photography-tips-photojaanic-3-1-1080x720.jpg);
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.container1 h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container1 .btn1 {
+    width: auto;
+  text-align: center;
+}
+.container1 .btn1 button {
+  font-size: 20px;
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.521);
+  color: white;
+  background-size: 200% 200%;
+  transition: ease-in-out 0.7s;
+  border: none;
+  border-radius: 20px;
+}
+
+.container1 .btn1 button:hover {
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 81, 0),
+    50%,
+    transparent 50%
+  );
+  background-position: 0 100%;
+}
+.container1 .temp {
+  border: none;
+  position: absolute;
+  width: 100%;
+  transition: all 1s;
+  bottom: -100%;
+  color: aliceblue;
+}
+.container1 .temp p {
+  color: aliceblue;
+  font-size: 25px;
+  padding: 20px;
+}
+.container1 .btn1:hover .temp {
+  position: absolute;
+  bottom: 40%;
+  z-index: 2;
+}
+.container1 .btn1::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    transition: all 0.7s;
+}
+.container1 .btn1:hover::after{
+    width: 60%;
+    display: block;
+}
+hr{
+    border: 2px solid white;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+          /* container2 */
+
+.container2 h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container2 .parent{
+  display: flex;
+  justify-content: space-around;
+
+}
+.container2 .parent .child{
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+
+}
+.container2 .parent .child img{
+    width: 100%;
+    height: 35vh;
+    transition: all 0.4s;
+  }
+.container2  .parent .child:hover img{
+    /* border-radius: 20%; */
+  transform: scale(1.2);
+
+}
+.container2 .parent .box{
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    bottom: -50%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+
+}
+.parent .child:hover .box{
+    position: absolute;
+    bottom: 0%;
+    z-index: 2;
+    width: 100%;
+    transition: all 0.5s;
+} 
+
+/* container3 */
+
+.container3 h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container3 h2{
+  color: rgb(250, 129, 81);
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container3 p{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Oswald", sans-serif
+}
+.container3 .parent{
+  width: 100%;
+  display: grid;
+  grid-template-columns:30% 30% 30% ;
+  gap: 30px;
+  justify-content: center;
+
+}
+.container3 .parent .child{
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 2px solid white;
+
+}
+.container3 .parent .child img{
+    width: 100%;
+    height: 35vh;
+    transition: all 0.4s;
+  }
+.container3  .parent .child:hover img{
+  transform: scale(1.2);
+  filter: blur(10px);
+}
+.container3 .parent .box{
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    bottom: -100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+
+}
+.container3 .parent .box h1{
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container3 .parent .box h3{
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container3 .parent .child:hover .box{
+    position: absolute;
+    bottom: 0%;
+    z-index: 2;
+    transition: all 0.5s;
+} 
+.container3 .parent .box button{
+  font-size: 18px ;
+  padding: 5px 10px ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.445);
+  color: white;
+  font-family: monospace;
+  border: none;
+  background-size: 200% 200%;
+  transition: all 0.6s;
+}
+.container3 .parent .box button:hover{
+
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 81, 0),
+    50%,
+    transparent 50%
+  );
+  background-position: 0 100%;
+  border-radius: 20px;
+}
+/* container4 */
+
+.container4 h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container4 h2{
+  color: rgb(250, 129, 81);
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container4 p{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Oswald", sans-serif
+}
+.container4 .parent{
+  width: 100%;
+  display: grid;
+  grid-template-columns:30% 30% 30% ;
+  gap: 30px;
+  justify-content: center;
+
+}
+.container4 .parent .child{
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 2px solid white;
+
+}
+.container4 .parent .child img{
+    width: 100%;
+    height: 35vh;
+    transition: all 0.4s;
+  }
+.container4  .parent .child:hover img{
+  transform:rotate(12deg) scale(1.2);
+  filter: blur(3px);
+}
+.container4 .parent .box{
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    bottom: -100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+
+}
+.container4 .parent .box h1{
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container4 .parent .box h3{
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container4 .parent .child:hover .box{
+    position: absolute;
+    bottom: 0%;
+    z-index: 2;
+    transition: all 0.5s;
+} 
+.container4 .parent .box button{
+  font-size: 18px ;
+  padding: 5px 10px ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.445);
+  color: white;
+  font-family: monospace;
+  border: none;
+  background-size: 200% 200%;
+  transition: all 0.6s;
+}
+.container4 .parent .box button:hover{
+
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 81, 0),
+    50%,
+    transparent 50%
+  );
+  background-position: 0 100%;
+  border-radius: 20px;
+}
+
+/* .container5 */
+
+/* for all background pizza and burger */
+
+.backg1{
+  background-image:linear-gradient(to top, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.425)),  url(https://cdn.britannica.com/98/235798-050-3C3BA15D/Hamburger-and-french-fries-paper-box.jpg);
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-attachment: fixed;
+  
+}
+.backg1 h1{
+  color: white;
+  font-size: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+.backg1 p{
+  font-size: 18px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.backg1 .child{
+  width: 40%;
+  height: 40vh;
+}
+.backg1 .child1{
+  width: 40%;
+  height: 40vh;
+  border: 3px solid white;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.backg1 .child1 img{
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.backg1 img:hover {
+  transform: scale(1.3);
+  border-radius: 40px;
+}
+.backg1 .child1:hover{
+  border-radius: 40%;
+}
+
+.backg2{
+  background-image:linear-gradient(to top, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.425)),  url(https://nomoneynotime.com.au/uploads/recipes/shutterstock_2042520416-1.jpg);
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-attachment: fixed;
+  
+}
+.backg2 h1{
+  color: white;
+  font-size: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+.backg2 p{
+  font-size: 18px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.backg2 .child{
+  width: 40%;
+  height: 40vh;
+}
+.backg2 .child1{
+  width: 40%;
+  height: 40vh;
+  border: 3px solid white;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.backg2 .child1 img{
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.backg2 img:hover {
+  transform: scale(1.3);
+  border-radius: 40px;
+}
+.backg2 .child1:hover{
+  border-radius: 40%;
+}
+
+
+                                            /* footer part */
+
+  .footer {
+    background-color: #1a1919;
+    color: #fff;
+    padding: 70px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact {
+    margin-top: 20px;
+  }
+  
+  .socials i {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 15px 10px;
+    transition: all 0.3s ;
+  }
+  
+  .socials i:hover {
+    transform: scale(1.2);
+    color: aqua;
+  }
+  
+  .links ul {
+    list-style: none;
+  }
+  
+  .links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-form .text-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form .btn {
+    display: inline-block;
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #005f7f;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #1d1c1c;
+    color: #ccc;
+  }                                            
+
